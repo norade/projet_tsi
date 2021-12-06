@@ -99,16 +99,16 @@ static void special_callback(int key, int, int)
   switch (key)
   {
     case GLUT_KEY_UP:
-      transformation_model_1.translation.y += dL; //rotation avec la touche du haut
+      obj->tr.translation.y += dL; //rotation avec la touche du haut
       break;
     case GLUT_KEY_DOWN:
-      transformation_model_1.translation.y -= dL; //rotation avec la touche du bas
+      obj->tr.translation.y -= dL; //rotation avec la touche du bas
       break;
     case GLUT_KEY_LEFT:
-      transformation_model_1.translation.x -= dL; //rotation avec la touche de gauche
+      obj->tr.translation.x -= dL; //rotation avec la touche de gauche
       break;
     case GLUT_KEY_RIGHT:
-      transformation_model_1.translation.x += dL; //rotation avec la touche de droite
+      obj->tr.translation.x += dL; //rotation avec la touche de droite
       break;
   }
 }
